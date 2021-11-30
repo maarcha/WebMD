@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "LoggedIn";
+}
+
+@if (HttpContext.Session.GetString("UserID") != null)
+{
+    <h4>
+        Sveiks @HttpContext.Session.GetString("PhoneNumber").ToString()
+    </h4>
+}
+
